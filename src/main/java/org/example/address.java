@@ -3,7 +3,9 @@ package org.example;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 
+import java.time.*;
 import java.util.Date;
+
 @Entity
 @Table(name = "student_address") // it changes the name of the table from the address to student_address in the database
 public class address {
@@ -19,10 +21,10 @@ public class address {
     private double Latitude;
     @Column(name = "DATE")
     @Temporal(TemporalType.DATE) //  this only stores the date of it not the day and time
-    private Date addeddate;
+    private LocalDate addeddate;
     @Lob // this is to define the large object
     private byte [] image; //this is to save the image in the database
-  address(int addressId,  String City, String State, Date addeddate, byte [] image)
+  address(int addressId,  String City, String State, LocalDate addeddate, byte [] image)
   {
       this.addressId = addressId;
       this.City = City;
@@ -56,10 +58,10 @@ public class address {
       this.State = State;
   }
 
-  public Date getAddeddate() {
+  public LocalDate getAddeddate() {
       return addeddate;
   }
-  public void setAddeddate(Date addeddate) {
+  public void setAddeddate(LocalDate addeddate) {
       this.addeddate = addeddate;
   }
 

@@ -11,7 +11,10 @@
     <property name="hibernate.connection.password">2000</property>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
     <property name="hibernate.show_sql">true</property>
+    <!-- update automatically sees that whether we have to create a table or update -->
     <property name="hibernate.hbm2ddl.auto">update</property>
+    <!-- This is to tell hibernate that this both the class exist-->
     <mapping class="org.example.Student"/>
+    <mapping class="org.example.address"/>
 </session-factory>
 </hibernate-configuration>
