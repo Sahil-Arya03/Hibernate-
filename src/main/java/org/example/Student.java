@@ -53,6 +53,13 @@ public class Student {
         this.lastName = lastName;
         return lastName;
     }
+    public Certificate getCerti() {
+        return certi;
+    }
+
+    public void setCerti(Certificate certi) {
+        this.certi = certi;
+    }
     @Override
             public String toString() {
         return id + ": " + firstName + ": " + lastName;
