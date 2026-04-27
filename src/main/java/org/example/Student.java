@@ -11,6 +11,7 @@ public class Student {
     private int id;
     private String firstName;
     private String lastName;
+    private Certificate certi;
 
 
     Student(int id, String firstName, String lastName) {
