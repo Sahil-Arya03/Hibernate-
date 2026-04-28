@@ -11,7 +11,7 @@ public class Project
     @Id
     private int Projid;
     private String Projname;
-    @ManyToMany (mappedBy = "projects")
+    @ManyToMany (mappedBy = "projects") // this prevents projects and emps to create a separate table and map emps using projects
     private List<Emp>  emps;
 
 
