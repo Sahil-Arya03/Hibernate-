@@ -17,5 +17,8 @@
     <mapping class="org.example.Student"/>
     <mapping class="org.example.address"/>
     <mapping class="org.example.Certificate"/>
+    <mapping class="org.relational.Emp"/>
+    <mapping class="org.relational.Project"/>
+
 </session-factory>
 </hibernate-configuration>
